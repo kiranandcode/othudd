@@ -1,0 +1,2 @@
+dune clean
+dune build
