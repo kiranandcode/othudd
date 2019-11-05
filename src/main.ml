@@ -16,4 +16,5 @@ let print_buffer buf =
 let _ = print_endline "Hello world!";
         print_buffer buf;
         print_buffer buf';
-        print_endline (Bool.to_string (Examplecoqinst.NetworkBuffer.is_full buf))
+        print_endline (Bool.to_string (Examplecoqinst.NetworkBuffer.is_full buf));
+        print_endline (Bool.to_string (Examplecoqinst.NetworkBuffer.is_equal buf buf'))

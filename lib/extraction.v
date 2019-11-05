@@ -19,7 +19,6 @@ Unset Extraction SafeImplicits.
 
 Set Extraction File Comment  "Generated Automagically using Coq-extract - see corresponding .v file for proofs*)
 open Core
-open Base
 (*".
 
 
@@ -192,6 +191,12 @@ Extract Inlined Constant Equality.class => "".
 Extract Inlined Constant size => "List.length".
 Extract Inlined Constant nilp => "(fun x -> List.length x > 0)".
 Extract Inlined Constant ohead => "List.hd".
+
+Extract Inlined Constant eqseqP => "()".
+Extraction Implicit eqseqP [T].
+
+
+
      (* Definition head : forall T : Type, T -> seq T -> T. *)
      (* Definition behead : forall T : Type, seq T -> seq T. *)
      (* Definition ncons : forall T : Type, nat -> T -> seq T -> seq T. *)
